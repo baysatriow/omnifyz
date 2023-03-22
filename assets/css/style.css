@@ -96,10 +96,12 @@ h6,
 .fixed-top {
     transition: .5s;
 }
+
 .navbar img {
     max-height: 50px;
     margin-right: 6px;
   }
+
 .top-bar {
     height: 45px;
     border-bottom: 1px solid rgba(53, 94, 252, .07);
@@ -209,7 +211,7 @@ h6,
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url() top left no-repeat;
+    background: url(../../assets/img/header.jpg) top left no-repeat;
     background-size: cover;
 }
 
@@ -225,7 +227,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../../assets/img/bg.png);
 }
 
 
@@ -241,7 +243,7 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../../assets//bg.png);
     z-index: -1;
 }
 
@@ -503,6 +505,10 @@ h6,
     background: var(--primary);
 }
 
+/*** Service Tables ***/
+.service-tables {
+
+}
 
 /*** Footer ***/
 .footer .btn.btn-link {
