@@ -5,47 +5,54 @@
     <title>Kirim Email</title>
   </head>
   <body>
-    <form>
-      <label for="name">Nama:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="subject">Subjek:</label>
-      <input type="text" id="subject" name="subject" required><br><br>
-      <label for="message">Pesan:</label><br>
-      <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-      <button type="submit" onclick="sendEmail()">Kirim</button>
+    <form id="form">
+      <div class="field">
+        <label for="subject">subject</label>
+        <input type="text" name="subject" id="subject">
+      </div>
+      <div class="field">
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="field">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="field">
+        <label for="message">message</label>
+        <input type="text" name="message" id="message">
+      </div>
+    
+      <input type="submit" id="button" value="Send Email" >
     </form>
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('qbr9VQDPydjs3g5VS')
+    </script>
     <script>
-      (function(){
-        emailjs.init("qbr9VQDPydjs3g5VS");
-      })();
-      
-      function sendEmail() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-        
-        var templateParams = {
-          from_name: name,
-          from_email: email,
-          subject: subject,
-          message_html: message
-        };
-        
-        emailjs.send("service_j7rcot3", "template_q94xnf6", templateParams)
-          .then(function(response) {
-            alert("Email berhasil dikirim!");
-            console.log("SUCCESS", response);
-          }, function(error) {
-            alert("Email gagal dikirim, silahkan coba lagi!");
-            console.log("FAILED", error);
+      const btn = document.getElementById('button');
+
+      document.getElementById('form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_q94xnf6';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+          }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
           });
-        
-        return false;
-      }
+      });
     </script>
   </body>
 </html>
