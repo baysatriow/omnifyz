@@ -551,3 +551,12 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+@media screen and (max-width: 600px) {
+    div .service-tables {
+      font-size: 14px;
+    }
+    /* div.service-tables .service-group th .table-name{
+        font-size: 2px;
+    } */
+  }
