@@ -97,8 +97,9 @@ h6,
     transition: .5s;
 }
 
-.navbar img {
-    max-height: 50px;
+.navbar .navbar-brand {
+    content:url(../img/logo1.png);
+    max-height: 60px;
     margin-right: 6px;
   }
 
@@ -556,6 +557,11 @@ h6,
     div .service-tables {
       font-size: 14px;
     }
+    .navbar .navbar-brand {
+        content:url(../img/logo.png);
+        max-height: 60px;
+        margin-right: 6px;
+      }
     /* div.service-tables .service-group th .table-name{
         font-size: 2px;
     } */
