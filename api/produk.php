@@ -71,7 +71,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link">Beranda</a>
                     <a href="#" class="nav-item nav-link">Tentang</a>
-                    <a href="produk.php" class="nav-item nav-link">Jasa/Produk</a>
+                    <a href="produk.html" class="nav-item nav-link">Jasa/Produk</a>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu border-light m-0">
@@ -107,7 +107,7 @@
                 <div class="col-lg-6">
                     <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
                     <h1 class="display-1">404</h1>
-                    <h1 class="mb-4">INI PRODUK</h1>
+                    <h1 class="mb-4">Website Dalam Pemeliharaan</h1>
                     <p class="mb-4">Mohon Maaf, Website sedang dalam proses pengerjaan!!</p>
                     <a class="btn btn-primary py-3 px-5" href="">Coming Soon!</a>
                 </div>
