@@ -10,10 +10,10 @@ if ($pg == "register") {
 	$username 	= $_POST['username'];
 	$password 	= password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-	mysqli_query($koneksi, "INSERT INTO masyarakat VALUES ('','$nama','$username','$password')");
+	mysqli_query($koneksi, "INSERT INTO tb_user VALUES ('','$nama','$username','$password')");
     
     // Mengalihkan ke Halaman Login Dan Membuat Alert Sukses
-	header("location: ../index.php?pesan=sukses");
+	header("location: index.php?pesan=sukses");
 
 }
 
