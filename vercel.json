@@ -6,7 +6,7 @@
     "api/config/*.php": {
       "runtime": "vercel-php@0.5.2"
     },
-    "*.php": {
+    "/*.php": {
       "runtime": "vercel-php@0.5.2"
     }
   }
