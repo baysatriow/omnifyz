@@ -47,7 +47,7 @@
                                     <section class="form-box-popup">
                                         <div class="form-regis">
                                             <div class="form-value">
-                                                <form action="masyarakat/crud_web.php?pg=register" method="POST">
+                                                <form action="crud_web.php?pg=register" method="POST">
                                                     <h2>Registrasi</h2>
                                                     <div class="inputbox">
                                                         <ion-icon name="pencil-outline"></ion-icon>
