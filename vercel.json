@@ -6,8 +6,8 @@
     "api/config/*.php": {
       "runtime": "vercel-php@0.5.2"
     }
-  },
-  "routes": [
-    { "src": "/index.php)",  "dest": "/api/index.php" }
-  ]
+  }
+  // "routes": [
+  //   { "src": "/index.php)",  "dest": "/api/index.php" }
+  // ]
 }
