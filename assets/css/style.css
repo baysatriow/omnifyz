@@ -23,7 +23,7 @@
     height: 50px;
     border-radius: 100px;
     border: 0;
-    z-index: 9999;
+    z-index: 9998;
     color: white;
     transition: .2s;
 }
@@ -60,6 +60,54 @@
     background-color: #1f7a12;
 }
 
+.scroll_wa {
+    position: fixed;
+    right: 30px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.scroll_wa.aja {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* .scroll_wa span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+} */
+
+.scroll_wa span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: inline-block;
+}
+
+.scroll_wa img {
+    margin-bottom: -3px;
+}
+
+.scroll_wa.whatsapp {
+    bottom: 30px;
+    background-color: #1f7a12;
+    border: 2px solid #fff;
+}
+
+/* .scroll_wa.whatsapp:hover {
+    background-color: #1f7a12;
+} */
 
 h1,
 .h1,
@@ -219,8 +267,9 @@ h6,
     text-align: start;
     z-index: 1;
 }
-.tagline{
+.tagline2{
     color: #fff;
+    text-shadow: -4px 0 #011A41, 0 4px #011A41, 4px 0 #011A41, 0 -4px #011A41;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -254,8 +303,9 @@ h6,
     .welcome_text {
         font-size: 12px;
     }
-    .tagline{
+    .tagline2{
         color: #fff;
+        text-shadow: -2px 0 #011A41, 0 2px #011A41, 2px 0 #011A41, 0 -2px #011A41;
     }
     .display-1 {
         font-size: 30px;

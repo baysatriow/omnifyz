@@ -47,6 +47,19 @@
         return false;
     });
 
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('.scroll_wa').fadeIn('slow');
+        } else {
+            $('.scroll_wa').fadeOut('slow');
+        }
+    });
+    $('.scroll_wa').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInBounce');
+        return false;
+    });
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
