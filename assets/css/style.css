@@ -720,9 +720,10 @@ h6,
       }
       
       .page-header {
-        background: url(../../assets/img/header.png) top right no-repeat;
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+        background: url(../../assets/img/header768.png) top left no-repeat;
         background-size: cover;
-        
     }
     .display-3{
         font-size: 45px;
