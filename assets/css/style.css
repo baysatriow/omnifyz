@@ -726,11 +726,12 @@ h6,
         background-size: cover;
     }
     .display-3{
-        font-size: 45px;
+        font-size: 30px;
     }
     .page-header .breadcrumb-item,
     .page-header .breadcrumb-item a {
         font-weight: 300;
+        font-size: 12px;
     }
     div .service-tables {
       font-size: 12px;
