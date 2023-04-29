@@ -733,6 +733,9 @@ h6,
         font-weight: 300;
         font-size: 12px;
     }
+    .form input{
+        font-size: 14px;
+    }
     div .service-tables {
       font-size: 12px;
     }
