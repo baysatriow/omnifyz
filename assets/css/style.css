@@ -6,7 +6,21 @@
     --light: #DFE4FD;
     --dark: #011A41;
 }
-
+.promo {
+    display: none;
+}
+th {
+    font-family: "Noto Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+td {
+    font-family: Lato, sans-serif;
+    font-weight: 400px;
+    size: 14px;
+    line-height: 20px;
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -738,6 +752,9 @@ h6,
     }
     div .service-tables {
       font-size: 12px;
+    }
+    .promo {
+        display: inline-block;
     }
     /* div.service-tables .service-group th .table-name{
         font-size: 2px;
