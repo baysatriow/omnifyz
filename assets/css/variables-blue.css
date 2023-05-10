@@ -1,11 +1,6 @@
+/* GoldenZ Project - Omnifyz Store */
+
 /**
-* Template Name: HeroBiz
-* File: variables-blue.css
-* Description: Easily customize colors, typography, and other repetitive properties used in the template main stylesheet file main.css
-* 
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 * 
 * Contents:
 * 1. HeroBiz template variables 
@@ -33,13 +28,13 @@
   --color-default-rgb: 26, 31, 36;
 
   /* Defult links color */
-  --color-links: #3279fc;
-  --color-links-hover: #4797ff;
+  --color-links: #185bd8;
+  --color-links-hover: #355EFC;
 
   /* Primay colors */
   --color-primary: #3279fc;
-  --color-primary-light: #4797ff;
-  --color-primary-dark: #1c61e2;
+  --color-primary-light: #355EFC;
+  --color-primary-dark: #011A41;
 
   --color-primary-rgb: 50, 121, 252;
   --color-primary-light-rgb: 71, 151, 255;

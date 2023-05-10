@@ -1,11 +1,4 @@
-/**
-* Template Name: HeroBiz
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+/* GoldenZ Project - Omnifyz Store */
 /**
 * Check out variables.css for easy customization of colors, typography, and other repetitive properties
 */
@@ -559,7 +552,7 @@ section {
 .hero-animated {
   width: 100%;
   min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+  background: url("../img/hero-bg.svg") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -572,9 +565,49 @@ section {
   color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
+.neontext {
+ color: #fff;
+ text-shadow: 
+ 0 0 7px #fff,
+ 0 0 10px #fff,
+ 0 0 21px #fff,
+ 0 0 42px #355EFC,
+ 0 0 82px #355EFC,
+ 0 0 92px #355EFC,
+ 0 0 102px #355EFC,
+ 0 0 151px #355EFC;
+}
 
 .hero-animated h2 span {
-  color: var(--color-primary);
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  animation: glow 0.50s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow {
+  100%{
+    text-shadow: 
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #355EFC,
+    0 0 80px #355EFC,
+    0 0 90px #355EFC,
+    0 0 100px #355EFC,
+    0 0 150px #355EFC;
+  }
+  0%{
+    text-shadow: 
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #355EFC,
+    0 0 73px #355EFC,
+    0 0 80px #355EFC,
+    0 0 94px #355EFC,
+    0 0 140px #355EFC;
+  }
 }
 
 .hero-animated p {
