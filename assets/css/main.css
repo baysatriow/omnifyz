@@ -562,10 +562,10 @@ section {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 300;
-  color: var(--color-secondary);
+  color: var(--color-gray);
   font-family: var(--font-secondary);
 }
-.neontext {
+/* .neontext {
  color: #fff;
  text-shadow: 
  0 0 7px #fff,
@@ -576,16 +576,18 @@ section {
  0 0 92px #355EFC,
  0 0 102px #355EFC,
  0 0 151px #355EFC;
-}
+} */
 
 .hero-animated h2 span {
-  color: #fff;
-  font-weight: 400;
+  color: var(--color-blue);
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.1px;
+  /* font-weight: 400;
   line-height: 1;
-  animation: glow 0.50s ease-in-out infinite alternate-reverse;
+  animation: glow 0.50s ease-in-out infinite alternate-reverse; */
 }
 
-@keyframes glow {
+/* @keyframes glow {
   100%{
     text-shadow: 
     0 0 4px #fff,
@@ -608,10 +610,10 @@ section {
     0 0 94px #355EFC,
     0 0 140px #355EFC;
   }
-}
+} */
 
 .hero-animated p {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  color: rgba(var(--color-secondary-light-rgb), 0.8);
   margin: 0 0 30px 0;
   font-size: 20px;
   font-weight: 400;
